@@ -8,7 +8,7 @@ def convert(input_file, output_file):
     doctype = '<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">'
 
     # Parse the CSV file and build the XML
-    with open(input_file, newline='') as csv_file:
+    with open(input_file, encoding='UTF-8', newline='') as csv_file:
         reader = csv.reader(csv_file)
 
         # First row is the Local info

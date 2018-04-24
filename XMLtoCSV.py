@@ -5,7 +5,7 @@ def convert(input_file, output_file):
     tree = ET.parse(input_file)
     root = tree.getroot()
 
-    with open(output_file, 'w+') as csv_file:
+    with open(output_file, 'w+', encoding='UTF-8') as csv_file:
         writer = csv.writer(csv_file)
 
         # First element in root is the Locale info
